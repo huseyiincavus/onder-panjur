@@ -928,15 +928,19 @@ img {
 
 @media (max-width: 1199px) {
   .homepage {
-    padding-top: 0;
+    padding-top: 0 !important;
   }
 
   .site-header--light {
-    position: static;
-    left: auto;
-    right: auto;
-    top: auto;
-    box-shadow: none;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    box-shadow: none !important;
+  }
+
+  section[id] {
+    scroll-margin-top: 24px;
   }
 
   .header-top,
