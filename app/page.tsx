@@ -548,7 +548,7 @@ export default function Page() {
               </a>
               <a
                 className="contact-shortcut"
-                href="https://wa.me/905387403029?text=Merhaba%2C%20evim%20i%C3%A7in%20cam%20balkon%20yapt%C4%B1rmak%20istiyorum.%20Uygunsan%C4%B1z%20ke%C5%9Fif%20ve%20fiyat%20bilgisi%20alabilir%20miyim%3F"
+                href="https://wa.me/905387403029?text=Merhaba%2C%20evim%20i%C3%A7in%20yapt%C4%B1rmak%20istedi%C4%9Fim%20i%C5%9Fler%20var.%20Ke%C5%9Fif%20ve%20fiyat%20bilgisi%20alabilir%20miyim%3F"
                 target="_blank"
                 rel="noreferrer"
               >
