@@ -12,7 +12,6 @@ import logoImage from "@/public/images/logo.png";
 import panjurImage from "@/public/images/panjur.png";
 import pimapenImage from "@/public/images/pimapen.png";
 import sineklikImage from "@/public/images/sineklik.png";
-import { serviceAreas } from "@/app/lib/service-areas";
 
 type IconProps = {
   className?: string;
@@ -522,25 +521,6 @@ export default function Page() {
               </div>
             </article>
           ))}
-        </div>
-      </section>
-
-      <section className="service-area-links">
-        <div className="container-custom">
-          <div className="section-heading">
-            <p className="section-heading__eyebrow">HİZMET BÖLGELERİMİZ</p>
-            <h2>İstanbul ve Çevre İllerde Hizmet Verdiğimiz Bölgeler</h2>
-            <div className="section-heading__line" />
-          </div>
-
-          <div className="service-area-link-grid">
-            {serviceAreas.map((area) => (
-              <Link key={area.slug} href={`/hizmet-bolgeleri/${area.slug}`} className="service-area-link-card">
-                <strong>{area.name}</strong>
-                <span>{area.description}</span>
-              </Link>
-            ))}
-          </div>
         </div>
       </section>
 
