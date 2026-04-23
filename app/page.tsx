@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import Image from "next/image";
 import Link from "next/link";
 
