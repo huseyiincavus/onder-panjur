@@ -96,7 +96,7 @@ function WhatsAppIcon({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" className={className}>
       <path
-        d="M12 4.2a7.8 7.8 0 0 0-6.7 11.8L4.2 20l4.1-1.1A7.8 7.8 0 1 0 12 4.2Z"
+        d="M12 3.2a8.8 8.8 0 0 0-7.5 13.4L3.4 20.8l4.4-1.1A8.8 8.8 0 1 0 12 3.2Z"
         fill="none"
         stroke="currentColor"
         strokeWidth="1.7"
@@ -104,7 +104,7 @@ function WhatsAppIcon({ className }: IconProps) {
         strokeLinejoin="round"
       />
       <path
-        d="M9.4 8.9c.2-.4.4-.4.6-.4h.5c.2 0 .4 0 .5.4l.6 1.5c.1.2.1.4 0 .6l-.5.8c.4.8 1.1 1.5 1.9 2l.8-.5c.2-.1.4-.1.6 0l1.4.6c.3.1.4.2.4.5v.5c0 .2 0 .5-.4.6-.4.2-1 .3-1.5.2-2.7-.6-5-2.9-5.6-5.6-.1-.5 0-1.1.2-1.4Z"
+        d="M9.2 8.5c.2-.3.4-.4.6-.4h.4c.2 0 .4.1.5.4l.6 1.4c.1.2.1.4 0 .6l-.5.7c.5.9 1.2 1.6 2 2l.7-.4c.2-.1.4-.1.6 0l1.4.6c.3.1.4.2.4.5v.4c0 .2-.1.4-.4.6-.4.2-.9.2-1.4.1-2.6-.6-4.7-2.7-5.3-5.2-.1-.5 0-1 .2-1.3Z"
         fill="none"
         stroke="currentColor"
         strokeWidth="1.5"
@@ -552,12 +552,21 @@ export default function Page() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <WhatsAppIcon className="contact-shortcut__icon" />
+                <WhatsAppIcon className="contact-shortcut__icon contact-shortcut__icon--whatsapp" />
                 <div>
                   <span>WhatsApp</span>
                   <strong>0538 740 30 29</strong>
                 </div>
               </a>
+            </div>
+
+            <div className="contact-map">
+              <iframe
+                title="Önder Panjur Konum"
+                src="https://www.google.com/maps?q=%C3%96nder%20Panjur%2C%20%C3%9Cnalan%20Mah.%20%C4%B0smet%20Pa%C5%9Fa%20Cd.%20No%3A66%2C%20%C3%9Csk%C3%BCdar%20%C4%B0stanbul&ll=41.0024647,29.0637955&z=18&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
 
