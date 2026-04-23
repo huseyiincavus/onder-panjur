@@ -927,6 +927,18 @@ img {
 }
 
 @media (max-width: 1199px) {
+  .homepage {
+    padding-top: 0;
+  }
+
+  .site-header--light {
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    box-shadow: none;
+  }
+
   .header-top,
   .hero-grid,
   .about-grid,
