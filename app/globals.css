@@ -48,18 +48,18 @@ img {
 
 .homepage {
   overflow-x: clip;
-  padding-top: 151px;
+  padding-top: 0;
 }
 
 .site-header--light {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
   z-index: 100;
   background: #fff;
   border-bottom: 1px solid var(--line);
-  box-shadow: 0 10px 30px rgba(18, 23, 32, 0.06);
+  box-shadow: none;
 }
 
 .header-top {
@@ -927,18 +927,6 @@ img {
 }
 
 @media (max-width: 1199px) {
-  .homepage {
-    padding-top: 0 !important;
-  }
-
-  .site-header--light {
-    position: static !important;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    box-shadow: none !important;
-  }
-
   section[id] {
     scroll-margin-top: 24px;
   }
@@ -1029,5 +1017,19 @@ img {
   .footer-bottom {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .homepage {
+    padding-top: 151px;
+  }
+
+  .site-header--light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 10px 30px rgba(18, 23, 32, 0.06);
   }
 }
