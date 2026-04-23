@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "@/app/components/contact-form";
 
 import aboutImage from "@/public/images/about.png";
 import cambalkonImage from "@/public/images/cambalkon.jpg";
@@ -570,31 +571,7 @@ export default function Page() {
             </div>
           </div>
 
-          <form className="contact-form">
-            <div className="contact-form__grid">
-              <input type="text" placeholder="Adınız Soyadınız" />
-              <input type="tel" placeholder="Telefon Numaranız" />
-              <input type="email" placeholder="E-posta Adresiniz" />
-              <select defaultValue="">
-                <option value="" disabled>
-                  Hizmet Seçimi
-                </option>
-                <option>Panjur Sistemleri</option>
-                <option>Pimapen Sistemleri</option>
-                <option>Cam Balkon Sistemleri</option>
-                <option>Sineklik Sistemleri</option>
-                <option>Duşakabin Sistemleri</option>
-                <option>Küpeşte Sistemleri</option>
-                <option>Çatı Sistemleri</option>
-              </select>
-              <textarea placeholder="Mesajınız" rows={5} />
-            </div>
-
-            <button type="submit" className="contact-form__button">
-              GÖNDER
-              <ArrowIcon className="contact-form__button-icon" />
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </section>
 

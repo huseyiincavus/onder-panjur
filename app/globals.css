@@ -724,9 +724,28 @@ img {
   transition: background-color 160ms ease, transform 160ms ease;
 }
 
+.contact-form__button:disabled {
+  cursor: wait;
+  opacity: 0.8;
+}
+
 .contact-form__button:hover {
   background: var(--primary-dark);
   transform: translateY(-1px);
+}
+
+.contact-form__status {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-form__status--success {
+  color: #1d7a46;
+}
+
+.contact-form__status--error {
+  color: #b53d2e;
 }
 
 .service-area-page {
